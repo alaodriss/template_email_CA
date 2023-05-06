@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Responsive Email Template</title>
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+  </head>
+
+  <style>
+    /* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+}
+/* Main Styles */
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.logo {
+  width: 125px;
+  height: 125px;
+}
+.header {
+  color: #0a94a8;
+  padding: 20px 40px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.titre_header {
+  color: #006a4e;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: right;
+}
+.content {
+  padding: 20px 40px;
+}
+.content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.button {
+  display: inline-block;
+  background-color: #336699;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #003366;
+}
+.hero {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*identification*/
+
+.identification {
+  background-color: #f7f8fa;
+  padding: 28px 32px;
+  border-left: 5px solid#0A94A8;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.identification > h2 {
+  font-size: 18px;
+  padding: 8px 0;
+}
+.connexion {
+  padding: 20px 0;
+}
+
+/*Application */
+.app {
+  background-color: #ecedf0;
+  color: #071621;
+  padding: 40px;
+}
+.img_app {
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+}
+.app > h2 {
+  padding: 10px 0;
+}
+
+.img_app > img {
+  width: 138px;
+  height: 47px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #071621;
+  height: 100%;
+}
+.footer > .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.icons > img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+.footer_info {
+  text-align: center;
+  padding: 30px;
+}
+.footer_info > img {
+  width: 215px;
+  height: 122px;
+}
+
+.footer_info > p {
+  margin: 30px auto;
+  font-size: 14px;
+  color: #fff;
+}
+
+.info_store {
+  padding: 40px 30px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #071621;
+}
+
+.message_email_auto {
+  text-align: center;
+  padding: 40px 30px;
+  font-size: 12px;
+}
+/* Media Queries */
+@media screen and (max-width: 350px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .titre_header{
+    font-size: 14px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .img_app {
+    display: block;
+}
+.footer > .icons {
+    display: block;
+    text-align: center;
+}
+}
+
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img class="logo" src="./assets/common/marque.png" />
+        <h1>VOUS AVEZ ACCÈS À</h1>
+        <img
+          class="hero"
+          src="./assets/uptopay-parts/hero.jpg"
+          alt="image_header"
+        />
+        <p class="titre_header">DÈS MAINTENANT</p>
+      </div>
+      <div class="content">
+        <p>Bonjour Monsieur / Madame</p>
+        <p>
+          Vous avez souscrit à l’offre <strong>[NOM DE L’OFFRE]</strong> et nous
+          vous en remercions.
+        </p>
+        <p>
+          Vous pouvez dès à présent télécharger l’application et activer votre
+          solution d’encaissement disponible sur l’App Store/Google Play
+          <a href="#" class="">ici</a>
+        </p>
+        <div class="identification">
+          <h2>Vos identifiants de connexion</h2>
+          <p>
+            Identifiant de connexion :
+            <span style="color: #009597">[LOGIN]</span>
+            <br />
+            Mot de passe : <span style="color: #009597">[MOT DE PASSE]</span>
+          </p>
+        </div>
+        <div class="connexion">
+          <p>
+            Lors de votre première connexion, il vous sera demandé de modifier
+            votre mot de passe.
+          </p>
+
+          <p>
+            Si vous perdez votre mot de passe, vous pouvez demander sa
+            réinitialisation depuis votre espace client.
+          </p>
+        </div>
+        <div class="services">
+          <p>
+            Disponible du lundi au samedi de 8h00 à 20h00 <br />
+            par téléphone* au
+            <span style="color: #666e8a">[NUMERO DU SERVICE CLIENT]</span>
+            <br />
+            ou par courriel :
+            <span style="color: #666e8a">[COURRIEL DU SERVICE CLIENT]</span>
+          </p>
+
+          <p>
+            Si vous perdez votre mot de passe, vous pouvez demander sa
+            réinitialisation depuis votre espace client.
+          </p>
+          <p><em>* prix d’un appel local, appel non surtaxé</em></p>
+        </div>
+      </div>
+      <div class="app">
+        <h2>Téléchargez l’application [NOM DE L’OFFRE]</h2>
+        <div class="img_app">
+          <img src="./assets/common/badge-appstore.png" alt="appstore" />
+          <img src="./assets/common/badge-googleplay.png" alt="googleplay" />
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="icons">
+          <img src="./assets/common/footer-rs-facebook.png" alt="facebook" />
+          <img src="./assets/common/footer-rs-twitter.png" alt="twitter" />
+          <img src="./assets/common/footer-rs-youtube.png" alt="youtube" />
+          <img src="./assets/common/footer-rs-instagram.png" alt="instagram" />
+          <img src="./assets/common/footer-rs-linkedin.png" alt="linkedin" />
+          <img src="./assets/common/footer-rs-viadeo.png" alt="viadeo" />
+        </div>
+        <hr />
+        <div class="footer_info">
+          <img src="./assets/common/footer-logo-ca.png" alt="footer-logo" />
+          <p>
+            Crédit Agricole S.A., agréé en tant qu’établissement de crédit<br />
+            Siège social : 12 place des États-Unis - 92127 Montrouge Cedex<br />
+            Capital social : 9 276 058 473 € - 784 608 416 RCS Nanterre.
+          </p>
+        </div>
+      </div>
+      <div> 
+        <p class="info_store">  (1)  Apple Store est une marque déposée par Apple Inc. Google Play est une marque déposée par Google LTD Liability Company.</p>
+        <hr />
+
+        <p class="message_email_auto">Ce mail est généré automatiquement, veuillez ne pas y répondre.</p>
+      </div>
+    </div>
+  </body>
+</html>
