@@ -1,5 +1,5 @@
 /* Reset Styles */
-/* * {
+* {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -9,9 +9,9 @@
 }
 body {
   background-color: #f5f5f5;
-} */
+}
 /* Main Styles */
-/* .wrapper {
+.wrapper {
   width: 100%;
   max-width: 600px;
   margin: 30px auto;
@@ -61,11 +61,11 @@ body {
   width: 90%;
   height: 100%;
   object-fit: cover;
-} */
+} 
 
 /*identification*/
 
-/* .identification {
+ .identification {
   background-color: #f7f8fa;
   padding: 28px 32px;
   border-left: 5px solid#0A94A8;
@@ -82,10 +82,10 @@ body {
 }
 .connexion {
   padding: 20px 0;
-} */
+} 
 
 /*Application */
-/* .app {
+.app {
   background-color: #ecedf0;
   color: #071621;
   padding: 40px;
@@ -102,10 +102,10 @@ body {
 .img_app > img {
   width: 138px;
   height: 47px;
-} */
+} 
 
 /* Footer */
-/* 
+
 .footer {
   background-color: #071621;
   height: 100%;
@@ -147,9 +147,9 @@ body {
   text-align: center;
   padding: 40px 30px;
   font-size: 12px;
-} */
+} 
 /* Media Queries */
-/* @media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
   .wrapper {
     max-width: 100%;
   }
@@ -169,5 +169,5 @@ body {
     display: block;
     text-align: center;
 }
-} */
+}
 
